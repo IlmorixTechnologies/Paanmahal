@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paan Mahal - Premium Paan Leaves</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="meetha paan.jpg" alt="Paan Mahal logo featuring a golden paan leaf with intricate designs" class="h-10 w-10 rounded-full">
+                    <span class="ml-2 text-xl font-bold text-green-800">Paan Mahal</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-green-700 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#products" class="nav-link text-gray-700 hover:text-green-700 px-3 py-2 text-sm font-medium active-nav">Products</a>
+                    <a href="#about" class="nav-link text-gray-7KZKhRU00 hover:text-green-700 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-green-700 px-3 py-2 text-sm font-medium">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-green-700 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <svg class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+            <a href="#home" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Home</a>
+            <a href="#products" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Products</a>
+            <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">About</a>
+            <a href="#testimonials" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Testimonials</a>
+            <a href="#contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero flex items-center justify-center text-center text-white pt-16">
+        <div class="px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Premium Paan Leaves</h1>
+            <p class="text-xl md:text-2xl mb-8">Experience the authentic taste of India with our handpicked, fresh paan leaves</p>
+            <a href="#products" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Premium Paan Collection</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover our wide variety of fresh and aromatic paan leaves, carefully selected for their quality and flavor.</p>
+            </div>
+            
+            <!-- Paan Type Tabs -->
+            <div class="flex flex-wrap justify-center mb-12 gap-2">
+                <button class="paan-type-tab active px-6 py-2 rounded-full bg-green-100 text-green-800 font-medium" data-type="all">All</button>
+                <button class="paan-type-tab px-6 py-2 rounded-full bg-green-100 text-green-800 font-medium" data-type="meetha">Meetha Paan</button>
+                <button class="paan-type-tab px-6 py-2 rounded-full bg-green-100 text-green-800 font-medium" data-type="sada">Sada Paan</button>
+                <button class="paan-type-tab px-6 py-2 rounded-full bg-green-100 text-green-800 font-medium" data-type="maghai">Chocolate Paan</button>
+                <button class="paan-type-tab px-6 py-2 rounded-full bg-green-100 text-green-800 font-medium" data-type="banarasi">Banarasi Paan</button>
+            </div>
+            
+            <!-- Paan Products Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Paan Product Card 1 -->
+                <div class="paan-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300" data-type="meetha">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="meetha paan.jpg" alt="Fresh Meetha Paan with chocolate style toppings" class="w-full h-full object-cover">
+                        <div class="absolute top-2 right-2 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full">Best Seller</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Meetha Paan</h3>
+                        <p class="text-gray-600 mb-2">Sweet paan with gulkand, coconut, and cherry toppings</p>
+                        <span class="text-green-700 font-bold">₹25</span>
+                    </div>
+                </div>
+                
+                <!-- Paan Product Card 2 -->
+                <div class="paan-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300" data-type="sada">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="sada paan .jpg" alt="Traditional Sada Paan with kattha and chuna" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sada Paan</h3>
+                        <p class="text-gray-600 mb-2">Classic paan with kattha, chuna, and supari</p>
+                        <span class="text-green-700 font-bold">₹20</span>
+                    </div>
+                </div>
+                
+                <!-- Paan Product Card 3 -->
+                <div class="paan-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300" data-type="Chocolate">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="choco pan.jpg" alt="Premium Chocolate Paan presentation" class="w-full h-full object-cover">
+                        <div class="absolute top-2 right-2 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-full">Premium</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Chocolate Paan</h3>
+                        <p class="text-gray-600 mb-2">Elite paan with silver foil and exotic ingredients</p>
+                        <span class="text-green-700 font-bold">₹50</span>
+                    </div>
+                </div>
+                
+                <!-- Paan Product Card 4 -->
+                <div class="paan-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300" data-type="banarasi">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="banarasi pan.jpg" alt="Authentic Banarasi Paan with special spices and ingredients" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Banarasi Paan</h3>
+                        <p class="text-gray-600 mb-2">Traditional Banaras style paan with special spices</p>
+                        <span class="text-green-700 font-bold">₹35</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="about .jpg" alt="Traditional paanwala preparing fresh paan leaves on wooden stall with ingredients" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Royal Paanwala</h2>
+                    <p class="text-gray-600 mb-4">Founded in 2010, Royal Paanwala has been serving authentic Indian paan to connoisseurs in Kurnool and beyond. Our journey began in the heart of Venkatramana Colony, where we mastered the art of perfect paan-making.</p>
+                    <p class="text-gray-600 mb-6">We source our paan leaves directly from the finest gardens in West Bengal and Kerala, ensuring you get the freshest and most flavorful leaves every time.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-green-700 mb-2">100% Natural</h3>
+                            <p class="text-sm text-gray-600">No artificial preservatives</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-green-700 mb-2">Handpicked</h3>
+                            <p class="text-sm text-gray-600">Carefully selected leaves</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-green-700 mb-2">Traditional</h3>
+                            <p class="text-sm text-gray-600">Age-old preparation methods</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from our satisfied customers about their experiences with Royal Paanwala</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.imgur.com/GxZZ2B3.jpg" alt="Happy customer Rajesh from Kurnool enjoying paan" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Abdul Azeez</h4>
+                            <p class="text-gray-600 text-sm">Kurnool</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The Maghai paan from Royal Paanwala is simply unmatched in quality. I've been their customer for years and they never disappoint!"</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.imgur.com/dB9s7oD.jpg" alt="Satisfied customer Priya from Kurnool city" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Prem kumar</h4>
+                            <p class="text-gray-600 text-sm">Kurnool City</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"As someone who's tried paan across India, Royal Paanwala's Banarasi special is genuinely the best I've ever tasted in Andhra."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.imgur.com/zZJxYOQ.jpg" alt="Local restaurant owner Amit from AP" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Mahaboob</h4>
+                            <p class="text-gray-600 text-sm">Kurnool</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"We get our paan supplies exclusively from Royal Paanwala. Their consistent quality keeps our customers coming back daily."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Contact Royal Paanwala</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Get in touch for orders, special requests, or just to say hello!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Our Location</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-green-400 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Main Shop</h4>
+                                <p class="text-gray-300">Road No.4, Venkatramana Colony, Kurnool City, Andhra Pradesh - 518001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-green-400 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Phone/WhatsApp</h4>
+                                <p class="text-gray-300">+91 9553359408</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-green-400 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-300">royalpaanwala.knl@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-green-400 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Opening Hours</h4>
+                                <p class="text-gray-300">10:00 AM - 10:00 PM (Daily)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-2xl text-gray-300 hover:text-white transition duration-300">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-2xl text-gray-300 hover:text-white transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/919553359408" class="text-2xl text-gray-300 hover:text-white transition duration-300">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-1">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Royal Paanwala</h3>
+                    <p class="text-gray-400">Serving authentic Indian paan since 2010. Quality and tradition in every leaf.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition duration-300">Products</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Paan Types</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Meetha Paan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Sada Paan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Maghai Paan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Banarasi Paan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe for updates on new products and offers</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-green-500 w-full">
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Royal Paanwala. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-cc-visa"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-cc-mastercard"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-8 right-8 floating-btn">
+        <a href="https://wa.me/919553359408" class="bg-green-600 hover:bg-green-700 text-white text-3xl p-4 rounded-full shadow-lg flex items-center justify-center transition duration-300">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                document.querySelector('.mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Paan type filtering
+        document.querySelectorAll('.paan-type-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.paan-type-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const type = this.dataset.type;
+                const paanCards = document.querySelectorAll('.paan-card');
+                
+                if (type === 'all') {
+                    paanCards.forEach(card => card.style.display = '');
+                } else {
+                    paanCards.forEach(card => {
+                        card.style.display = card.dataset.type === type ? '' : 'none';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
